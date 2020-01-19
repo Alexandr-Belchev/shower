@@ -147,16 +147,57 @@
 
     <section class="slide">
         <h2>Cтрелочные функции ES6</h2>
+        <p>Стрелочные функции (arrow functions) представляют сокращенную версию обычных функций.</p>
+        <p><code>let commonFunction = function() {}</code></p>
+        <p><code>let arrowFunction = () => {}</code></p>
     </section>
 
-    <section class="slide">
+    <section class="slide arrows">
+        <h2>У стрелочных функций нет «this»</h2>
+        <div class="columns two">
+            <div>
+                <pre><code>
+let group = {
+    title: "Группка",
+    students: ["Игорь", "Лиза", "Серега"],
+    showList() {
+        this.students.forEach(student => {
+            console.log(this.title + ': ' + student)
+        })
+    }
+}
+group.showList();
+                </code></pre>
+                <p>Здесь внутри forEach использована стрелочная функция, таким образом this.title в ней будет иметь точно такое же значение, как в методе showList: group.title.</p>
+            </div>
+            <div>
+                <pre><code>
+let group = {
+    title: "Группка",
+    students: ["Игорь", "Лиза", "Серега"],
+    showList() {
+        this.students.forEach(function(student) {
+            // Error: Cannot read property 'title' of undefined
+            console.log(this.title + ': ' + student)
+        })
+    }
+}
+group.showList()
+                </code></pre>
+                <p>Ошибка возникает потому, что forEach по умолчанию выполняет функции с this, равным undefined, и в итоге мы пытаемся обратиться к undefined.title.</p>
+                <p>Это не влияет на стрелочные функции, потому что у них просто нет this.</p>
+            </div>
+        </div>
+        <style>
+            .arrows code,
+            .arrows p {
+                font-size: 10px;
+            }
+        </style>
     </section>
     <section class="slide">
-        <h2>Разница между var и let</h2>
+        <h2>Эт конец</h2>
     </section>
-    <section class="slide">
-    </section>
-
     <footer class="badge">
         <a target="_blank" href="https://gitlab.com/Alexandr-Belchev">Gitlab</a>
     </footer>
