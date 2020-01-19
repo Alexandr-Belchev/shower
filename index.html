@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Немножко обо всем.</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="shower/themes/ribbon/styles/styles.css">
+    <style>
+        .shower {
+            --slide-ratio: calc(16 / 9);
+        }
+    </style>
+</head>
+<body class="shower list">
+    <section class="slide" id="cover">
+        <h2>Немножко обо всем.</h2>
+        <p><a href="https://gitlab.com/Alexandr-Belchev">Александ Бельчев</a></p>
+        <figure>
+            <img class="cover" src="pictures/bg.jpg" alt="Hands on the orange typewriter in a park">
+            <figcaption class="copyright right white">
+                <a href="https://gitlab.com/Alexandr-Belchev/">© Александ Бельчев</a>
+            </figcaption>
+        </figure>
+        <style>
+            #cover h2 {
+                margin: 30px 0 0;
+                color: white;
+                text-align: center;
+                font-size: 70px;
+            }
+
+            #cover p {
+                margin: 10px 0 0;
+                text-align: center;
+                color: white;
+                font-style: italic;
+                font-size: 20px;
+            }
+
+            #cover p a {
+                color: white;
+            }
+        </style>
+    </section>
+
+    <section class="slide">
+        <h2>Микроразметка данных ( <a href="http://schema.org">Schema.Org</a> )</h2>
+        <p>Семантическая разметка или микроразметка - это разметка веб-страницы с помощью тегов и атрибутов, которые помогают роботам (поисковым роботам, роботам социальных сетей и др.) понять о чем написано на каждой странице или отдельном блоке контента и о чем сайт в целом. Микроразметка состоит из синтаксиса и словаря.</p>
+    </section>
+
+    <section class="slide">
+        <div class="columns two">
+            <div>
+                <img src="pictures/img1.jpg" width="360px">
+            </div>
+            <div>
+                <img src="pictures/img3.png" width="360px">
+            </div>
+        </div>
+        <div class="columns two">
+            <div>
+                <img src="pictures/img4.png" width="360px">
+            </div>
+            <div>
+                <img src="pictures/img5.png" width="360px">
+            </div>
+        </div>
+    </section>
+
+    <section class="slide slide-attr">
+        <h2>Куда что нужно вписывать?</h2>
+        <div class="columns two">
+            <div>
+                <img src="pictures/img2.png" width="400px">
+                <p>Здесь мы видим три атрибута, и их вы должны будете неизменно использовать в каждой своей микроразметке:</p>
+            </div>
+            <div>
+                <ul>
+                    <li>
+                        Itemscope. Разграничивает блоки информации, выделяя их в отдельные сущности
+                    </li>
+                    <li>
+                        itemtype всегда идет рядом с itemscope и нужен для того, чтобы показать поисковому боту тип объекта (в данном случае, это BreadcrumbList). Полный список объектов можно посмотреть по <a href="http://schema.org/docs/full.html">ссылке.</a>
+                    </li>
+                    <li>
+                        itemprop – описывает свойства выбранного объекта.
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <style>
+            .slide-attr {
+                font-size: 18px
+            }
+        </style>
+    </section>
+
+    <section class="slide">
+        <h2>Итоги по микроразметке</h2>
+        <p><b>Используем!</b> Потому что красивый сниппет в поисковой выдаче - это сила. Микроразметка не только помогает поисковому боту лучше понимать информацию на вашем сайте, но и способствует увеличению трафика.</p>
+        <p>Инструмент проверки микроразметки - <a target="_blank" href="https://search.google.com/structured-data/testing-tool">https://search.google.com/structured-data/testing-tool</a></p>
+        
+    </section>
+
+    <section class="slide">
+        <h2>Полезные статейки:</h2>
+        <ul>
+            <li><a target="_blank" href="https://impulse-design.com.ua/chto-takoe-mikrorazmetka-sajta.html">https://impulse-design.com.ua/chto-takoe-mikrorazmetka-sajta.html</a></li>
+            <li><a target="_blank" href="https://webmart.by/seo/mikrorazmetka-dlja-sajta-ot-a-do-ja.html">https://webmart.by/seo/mikrorazmetka-dlja-sajta-ot-a-do-ja.html</a></li>
+        </ul>
+    </section>
+    
+    <section class="slide">
+        <h2>Семантические элементы HTML5</h2>
+        <p>Семантический HTML5 устраняет определяя точные теги для пояснения четкой роли контента на странице. Эта дополнительная информация помогает роботам/индексаторам лучше понять какой контент важен, какой является второстепенным, какой используется для навигации и так далее. Добавляя семантические HTML теги на ваши страницы, вы даете дополнительную информацию, которая помогает поисковикам понимать роли и относительную важность разных частей ваших страниц.</p>
+    </section>
+
+    <section class="slide">
+        <h2>Основные семантические элементы HTML5</h2>
+        <ul style="font-size: 20px">
+            <li><code>&lt;header&gt;</code></li>
+            <li><code>&lt;nav&gt;</code></li>
+            <li><code>&lt;article&gt;</code></li>
+            <li><code>&lt;section&gt;</code></li>
+            <li><code>&lt;aside&gt;</code></li>
+            <li><code>&lt;footer&gt;</code></li>
+            <li><code>&lt;address&gt;</code></li>
+            <li><code>&lt;header&gt;</code></li>
+            <li><code>&lt;main&gt;</code></li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2>Почему надо это использовать?</h2>
+        <p>Семантические элементы HTML5 доступно описывают свой смысл или назначение как для браузеров, так и для веб-разработчиков.</p>
+        <p>Поисковые боты имеют серьёзное ослабление со зрением. Для них визуальные пояснения сложно увидеть и понять.</p>
+        <p>Им нужна ваша помощь. Если вы можете успешно передавать поисковикам, какая часть страницы является хедером, какая футером и какая навигацией, то они поблагодарят вас.</p>
+    </section>
+
+    <section class="slide">
+        <h2>Полезные статейки:</h2>
+        <ul>
+            <li><a target="_blank" href="https://html5book.ru/html5-semantic-elements#part1">https://html5book.ru/html5-semantic-elements#part1</a></li>
+            <li><a target="_blank" href="https://medium.com/@stasonmars/секреты-использования-семантической-верстки-в-html5-c7cd5e6f1ebb">https://medium.com/@stasonmars/секреты-использования-семантической-верстки-в-html5-c7cd5e6f1ebb</a></li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2>Cтрелочные функции ES6</h2>
+    </section>
+
+    <section class="slide">
+    </section>
+    <section class="slide">
+        <h2>Разница между var и let</h2>
+    </section>
+    <section class="slide">
+    </section>
+
+    <footer class="badge">
+        <a target="_blank" href="https://gitlab.com/Alexandr-Belchev">Gitlab</a>
+    </footer>
+
+    <div class="progress"></div>
+
+    <script src="shower/shower.min.js"></script>
+    <!-- Copyright © 3000 Yours Truly, Famous Inc. -->
+
+</body>
+</html>
